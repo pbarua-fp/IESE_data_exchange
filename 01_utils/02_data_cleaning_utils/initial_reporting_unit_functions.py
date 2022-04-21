@@ -169,7 +169,7 @@ def max_value(df : pyspark.sql.DataFrame, col_list, group_col_list) -> pyspark.s
 
 def count_value(df : pyspark.sql.DataFrame, col_list, group_col_list) -> pyspark.sql.DataFrame:
     """
-    get minimum value for a group of columns.
+    get count for a group of columns.
     """
     for c in col_list:
         for i in group_col_list:
